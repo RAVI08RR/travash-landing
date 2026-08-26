@@ -1920,279 +1920,179 @@
     <!-- Scoped Styles for Pre-Footer Contact Section -->
     <style>
       .pre-footer-contact {
-        background: #0b0f19 !important;
+        background-color: #0b1d33 !important;
+        background-image: linear-gradient(135deg, rgba(11, 29, 51, 0.94) 0%, rgba(0, 59, 92, 0.94) 100%), url('assets/img/cta-bg.png') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
         position: relative;
         overflow: hidden;
-        padding: 90px 0;
+        padding: 100px 0;
       }
-      .pre-footer-contact::before {
-        content: '';
-        position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
-        background-image: 
-          linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px), 
-          linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
-        background-size: 40px 40px;
-        pointer-events: none;
-        z-index: 1;
-      }
-      .glow-blob-1 {
-        background: radial-gradient(circle, rgba(164, 224, 62, 0.08) 0%, rgba(164, 224, 62, 0) 70%);
-        width: 600px;
-        height: 600px;
-        position: absolute;
-        top: -200px;
-        left: -200px;
-        filter: blur(90px);
-        pointer-events: none;
-        z-index: 1;
-      }
-      .glow-blob-2 {
-        background: radial-gradient(circle, rgba(0, 113, 255, 0.12) 0%, rgba(0, 113, 255, 0) 70%);
-        width: 700px;
-        height: 700px;
-        position: absolute;
-        bottom: -250px;
-        right: -150px;
-        filter: blur(100px);
-        pointer-events: none;
-        z-index: 1;
-      }
-      .engagement-cards {
-        margin-top: 35px;
-      }
-      .engagement-card {
-        background: rgba(255, 255, 255, 0.02);
-        border: 1px solid rgba(255, 255, 255, 0.06);
-        border-radius: 14px;
-        padding: 18px;
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        height: 100%;
-      }
-      .engagement-card:hover {
-        background: rgba(255, 255, 255, 0.04);
-        border-color: rgba(164, 224, 62, 0.35);
-        transform: translateY(-3px);
-        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
-      }
-      .engagement-card i {
-        font-size: 20px;
-        color: #A4E03E;
-        background: rgba(164, 224, 62, 0.1);
-        width: 44px;
-        height: 44px;
+      .check-icon-wrapper {
+        width: 28px;
+        height: 28px;
+        background: #fff;
+        color: #004771;
+        border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 10px;
+        font-size: 14px;
         flex-shrink: 0;
-        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
       }
-      .engagement-card:hover i {
-        background: rgba(164, 224, 62, 0.2);
-        transform: scale(1.05) rotate(5deg);
-      }
-      .engagement-card h6 {
-        color: #fff;
-        font-weight: 600;
-        margin-bottom: 3px;
-        font-size: 1rem;
-        letter-spacing: -0.2px;
-      }
-      .engagement-card p {
-        color: #94a3b8;
-        font-size: 0.85rem;
-        margin-bottom: 0;
-        line-height: 1.35;
-      }
-      .engagement-card.full-width {
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0.02) 0%, rgba(164, 224, 62, 0.03) 100%);
-      }
-      .premium-contact-form-box {
-        background: rgba(15, 23, 42, 0.5);
-        backdrop-filter: blur(16px);
-        -webkit-backdrop-filter: blur(16px);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 24px;
-        padding: 40px 35px;
+      .white-contact-form-box {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 40px;
         position: relative;
         z-index: 10;
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
       }
-      .premium-contact-form-box::before {
-        content: '';
-        position: absolute;
-        top: 0; left: 0; right: 0; height: 4px;
-        background: linear-gradient(90deg, #A4E03E, #0071ff);
-        border-top-left-radius: 24px;
-        border-top-right-radius: 24px;
-      }
-      .premium-contact-form-box .form-label {
-        color: #cbd5e1 !important;
+      .white-contact-form-box .form-label {
+        color: #334155 !important;
         font-size: 0.85rem;
         font-weight: 600;
-        margin-bottom: 8px;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
+        margin-bottom: 6px;
       }
-      .premium-contact-form-box .form-control {
-        background: rgba(255, 255, 255, 0.03) !important;
-        border: 1px solid rgba(255, 255, 255, 0.08) !important;
-        color: #fff !important;
-        border-radius: 10px !important;
-        padding: 14px 18px !important;
-        transition: all 0.3s ease !important;
+      .white-contact-form-box .form-label span.asterisk {
+        color: #dc3545;
+        margin-left: 2px;
+      }
+      .white-contact-form-box .form-control {
+        background: #ffffff !important;
+        border: 1px solid #cbd5e1 !important;
+        color: #0f172a !important;
+        border-radius: 6px !important;
+        padding: 12px 16px !important;
+        transition: all 0.2s ease !important;
         font-size: 0.95rem;
       }
-      .premium-contact-form-box .form-control::placeholder {
-        color: rgba(255, 255, 255, 0.25) !important;
+      .white-contact-form-box .form-control::placeholder {
+        color: #94a3b8 !important;
       }
-      .premium-contact-form-box .form-control:focus {
-        background: rgba(255, 255, 255, 0.06) !important;
-        border-color: #A4E03E !important;
-        box-shadow: 0 0 15px rgba(164, 224, 62, 0.2) !important;
+      .white-contact-form-box .form-control:focus {
+        background: #ffffff !important;
+        border-color: #004771 !important;
+        box-shadow: 0 0 0 3px rgba(0, 71, 113, 0.15) !important;
         outline: none !important;
       }
-      .premium-submit-btn {
-        background: #A4E03E !important;
-        color: #000 !important;
-        font-weight: 700 !important;
-        border-radius: 10px !important;
-        padding: 15px !important;
-        font-size: 1.1rem !important;
+      .consultation-submit-btn {
+        background: #004771 !important;
+        color: #ffffff !important;
+        font-weight: 600 !important;
+        border-radius: 6px !important;
+        padding: 14px !important;
+        font-size: 1.05rem !important;
         border: none !important;
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-        position: relative;
-        overflow: hidden;
-        box-shadow: 0 5px 15px rgba(164, 224, 62, 0.25) !important;
+        transition: all 0.2s ease-in-out !important;
+        box-shadow: 0 4px 12px rgba(0, 71, 113, 0.15) !important;
       }
-      .premium-submit-btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 25px rgba(164, 224, 62, 0.45) !important;
-        background: #b2f04e !important;
+      .consultation-submit-btn:hover {
+        background: #003656 !important;
+        transform: translateY(-1px);
+        box-shadow: 0 6px 18px rgba(0, 71, 113, 0.25) !important;
       }
-      .premium-submit-btn:active {
+      .consultation-submit-btn:active {
         transform: translateY(0);
       }
-      .form-trust-text {
-        color: #64748b;
-        font-size: 0.8rem;
-        margin-top: 18px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 6px;
+      .avatar-wrapper img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       }
-      .form-trust-text i {
-        color: #A4E03E;
-        font-size: 0.85rem;
+      .avatar-wrapper h5 {
+        color: #0f172a;
+        font-size: 0.95rem;
+        font-weight: 700;
+        margin-bottom: 2px;
+      }
+      .avatar-wrapper span {
+        color: #d97706;
+        font-size: 0.8rem;
+        font-weight: 500;
       }
     </style>
 
     <!-- Section 10: Pre-Footer Contact Section -->
     <section class="gap pre-footer-contact" id="closing-cta">
-      <!-- Glow Blobs -->
-      <div class="glow-blob-1"></div>
-      <div class="glow-blob-2"></div>
-      
       <div class="container" style="position: relative; z-index: 2;">
         <div class="row align-items-center">
           <!-- Left Column: Copy -->
           <div class="col-lg-6 mb-5 mb-lg-0 pe-lg-5">
             <h2 class="fw-bold mb-3 text-white" style="font-size: 2.75rem; letter-spacing: -1px; line-height: 1.2;">
-              Have a Product Idea or <span style="background: linear-gradient(90deg, #fff 30%, #A4E03E 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Application to Improve?</span>
+              Ready to build digital products that drive real revenue?
             </h2>
-            <h5 class="fw-semibold mb-4" style="color: #A4E03E !important; font-size: 1.25rem;">Let’s Understand the Requirement Before You Invest in the Build.</h5>
-            <p class="text-white-50 mb-3 fs-5">
-              Tell us what you’re trying to build, improve or validate. You don’t need to have a complete technical specification.
-            </p>
-            <p class="text-white-50 mb-4 fs-5">
-              Share your business requirement and we’ll help identify the right engagement path:
+            <p class="text-white mb-4 fs-5" style="opacity: 0.85; line-height: 1.5;">
+              Stop letting technical debt slow you down. Speak with a senior engineering architect today to discuss your roadmap, architecture, and deployment strategy.
             </p>
             
-            <!-- Engagement Paths Grid -->
-            <div class="row g-3 engagement-cards mb-4">
-              <div class="col-sm-6">
-                <div class="engagement-card">
-                  <i class="fa-solid fa-compass"></i>
-                  <div>
-                    <h6>Discovery</h6>
-                    <p>Scoping & Tech Strategy</p>
-                  </div>
+            <!-- Checklist items -->
+            <div class="checklist-items">
+              <!-- Item 1 -->
+              <div class="d-flex align-items-start gap-3 mb-4">
+                <span class="check-icon-wrapper"><i class="fa-solid fa-check"></i></span>
+                <div>
+                  <h4 class="text-white fw-bold mb-1 fs-5">Strategic AI Guidance</h4>
+                  <p class="text-white-50 mb-0">Connects businesses with experienced architects.</p>
                 </div>
               </div>
-              <div class="col-sm-6">
-                <div class="engagement-card">
-                  <i class="fa-solid fa-layer-group"></i>
-                  <div>
-                    <h6>Prototype</h6>
-                    <p>UX/UI & Click Mockups</p>
-                  </div>
+              <!-- Item 2 -->
+              <div class="d-flex align-items-start gap-3 mb-4">
+                <span class="check-icon-wrapper"><i class="fa-solid fa-check"></i></span>
+                <div>
+                  <h4 class="text-white fw-bold mb-1 fs-5">Revenue-Focused Roadmaps</h4>
+                  <p class="text-white-50 mb-0">Ensures technology drives measurable business outcomes.</p>
                 </div>
               </div>
-              <div class="col-sm-6">
-                <div class="engagement-card">
-                  <i class="fa-solid fa-flask"></i>
-                  <div>
-                    <h6>Proof of Concept</h6>
-                    <p>Feasibility Validation</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="engagement-card">
-                  <i class="fa-solid fa-rocket"></i>
-                  <div>
-                    <h6>MVP Build</h6>
-                    <p>Fast Launch Core Features</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="engagement-card full-width">
-                  <i class="fa-solid fa-laptop-code"></i>
-                  <div>
-                    <h6>Full Product Development</h6>
-                    <p>End-to-End Scalable Production-Grade Software</p>
-                  </div>
+              <!-- Item 3 -->
+              <div class="d-flex align-items-start gap-3 mb-4">
+                <span class="check-icon-wrapper"><i class="fa-solid fa-check"></i></span>
+                <div>
+                  <h4 class="text-white fw-bold mb-1 fs-5">Data Readiness Evaluation</h4>
+                  <p class="text-white-50 mb-0">Assesses current states and defines next steps.</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Right Column: Short Form -->
+          <!-- Right Column: Short Form Card -->
           <div class="col-lg-6">
-            <div class="premium-contact-form-box">
+            <div class="white-contact-form-box">
+              <!-- Sneha Sharma Avatar Header -->
+              <div class="avatar-wrapper d-flex align-items-center gap-3 mb-4 pb-3 border-bottom" style="border-color: #f1f5f9 !important;">
+                <img src="assets/img/team-img-1.jpg" alt="Sneha Sharma">
+                <div>
+                  <h5 class="mb-0">Sneha Sharma – Client Success</h5>
+                  <span>You're in the right place – let's talk!</span>
+                </div>
+              </div>
+              
               <form role="form" class="short-contact-form" method="post" action="javascript:void(0);">
                 <div class="row">
                   <div class="col-md-6 mb-3">
-                    <label class="form-label">Name*</label>
-                    <input type="text" name="name" class="form-control" placeholder="John Doe" required>
+                    <label class="form-label">Name<span class="asterisk">*</span></label>
+                    <input type="text" name="name" class="form-control" placeholder="Name" required>
                   </div>
                   <div class="col-md-6 mb-3">
-                    <label class="form-label">Email*</label>
-                    <input type="email" name="email" class="form-control" placeholder="john@company.com" required>
+                    <label class="form-label">Phone Number<span class="asterisk">*</span></label>
+                    <input type="tel" name="phone" class="form-control" placeholder="Enter Your Phone Number" required>
                   </div>
                   <div class="col-md-12 mb-3">
-                    <label class="form-label">Phone</label>
-                    <input type="tel" name="phone" class="form-control" placeholder="+1 (555) 000-0000">
+                    <label class="form-label">Email<span class="asterisk">*</span></label>
+                    <input type="email" name="email" class="form-control" placeholder="Email" required>
                   </div>
                   <div class="col-md-12 mb-4">
-                    <label class="form-label">Message*</label>
-                    <textarea name="message" class="form-control" rows="4" placeholder="Briefly describe what you're looking for..." required style="resize: none;"></textarea>
+                    <label class="form-label">Message<span class="asterisk">*</span></label>
+                    <textarea name="message" class="form-control" rows="4" placeholder="Message" required style="resize: none;"></textarea>
                   </div>
                   <div class="col-md-12">
-                    <button type="submit" class="btn w-100 premium-submit-btn">
-                      Discuss Your Project
+                    <button type="submit" class="btn w-100 consultation-submit-btn">
+                      Request A Technical Consultation
                     </button>
-                    <div class="form-trust-text">
-                      <i class="fa-solid fa-lock"></i>
-                      <span>100% Confidential | Response within 24 hours</span>
-                    </div>
                   </div>
                 </div>
               </form>
