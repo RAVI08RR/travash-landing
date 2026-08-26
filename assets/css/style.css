@@ -2908,11 +2908,16 @@ a.union svg,
 /* === COMPACT HERO SECTION (FIT ON SCREEN WITHOUT CUTTING OFF FORM) === */
 .hero-section {
     position: relative;
-    padding-top: 95px !important;
+    padding-top: 146px !important;
     padding-bottom: 25px !important;
-    overflow: hidden;
+    overflow: visible;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* Align form column to the top so the form starts near the nav and stays visible */
+.hero-section .row.align-items-end {
+    align-items: flex-start !important;
 }
 
 .hero-text h1 {
@@ -2956,7 +2961,7 @@ a.union svg,
 }
 
 form#contact-form h3 {
-    font-size: 22px !important;
+    font-size: 28px !important;
     font-weight: bold;
     line-height: 26px !important;
     text-transform: capitalize;
@@ -3151,7 +3156,7 @@ form#contact-form h3 {
 
 .hero-section {
     position: relative;
-    padding-top: 95px !important;
+    padding-top: 146px !important;
     padding-bottom: 25px !important;
     overflow: hidden;
     background-image: url(../img/business-partners.jpg);
@@ -3962,7 +3967,7 @@ form#contact-form h3 {
 .capability-card {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px !important;
+    border-radius: 0px !important;
     padding: 2.5rem 2rem;
     height: 100%;
     backdrop-filter: blur(10px);
@@ -4054,4 +4059,240 @@ form#contact-form h3 {
     width: 100%;
     position: absolute !important;
     padding-top: 55px !important;
+}
+
+.btn-hero {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* ================================================
+   HERO CONTACT FORM — UI-Matched Design
+   ================================================ */
+
+/* Form card */
+#contact-form {
+    background: #ffffff !important;
+    border-radius: 16px !important;
+    padding: 24px 28px 22px !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.22) !important;
+    border: none !important;
+    position: relative;
+    z-index: 10;
+}
+
+/* Badge label */
+#contact-form h6 {
+    color: #5a9e0a !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    margin: 0 0 6px !important;
+    padding: 0 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    line-height: 35px;
+}
+
+/* Main heading */
+#contact-form h3 {
+    color: #0f172a !important;
+    font-size: 1.35rem !important;
+    font-weight: 800 !important;
+    margin: 0 0 4px !important;
+    padding: 0 !important;
+    line-height: 1.25 !important;
+}
+
+/* Subtitle text */
+#contact-form p.form-subtitle {
+    color: #64748b !important;
+    font-size: 0.8rem !important;
+    line-height: 1.45 !important;
+    margin: 0 0 16px !important;
+    padding: 0 !important;
+    font-weight: 400 !important;
+}
+
+/* Field labels */
+#contact-form label {
+    display: block !important;
+    color: #374151 !important;
+    font-size: 0.78rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 4px !important;
+    letter-spacing: 0.1px !important;
+}
+
+/* ── Shared field token ── */
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form select,
+.cf-select-wrap select,
+#contact-form textarea {
+    display: block !important;
+    width: 100% !important;
+    background: #f8fafc !important;
+    border: 1.5px solid #d1d9e0 !important;
+    color: #1e293b !important;
+    border-radius: 8px !important;
+    font-size: 0.85rem !important;
+    font-family: inherit !important;
+    outline: none !important;
+    transition: border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease !important;
+    box-shadow: none !important;
+}
+
+/* Text / Email */
+#contact-form input[type="text"],
+#contact-form input[type="email"] {
+    height: 42px !important;
+    padding: 0 14px !important;
+    margin-bottom: 0 !important;
+    line-height: 42px !important;
+}
+
+#contact-form input::placeholder {
+    color: #a8b5c3 !important;
+}
+
+#contact-form input[type="text"]:focus,
+#contact-form input[type="email"]:focus {
+    border-color: #004771 !important;
+    background: #fff !important;
+    box-shadow: 0 0 0 3px rgba(0, 71, 113, 0.1) !important;
+}
+
+/* Select wrapper */
+.cf-select-wrap {
+    position: relative;
+    display: block;
+}
+
+/* Native select — appearance reset + matching token */
+#contact-form select,
+.cf-select-wrap select {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    height: 42px !important;
+    line-height: 42px !important;
+    padding: 0 40px 0 14px !important;
+    margin-bottom: 0 !important;
+    cursor: pointer !important;
+}
+
+#contact-form select:focus,
+.cf-select-wrap select:focus {
+    border-color: #004771 !important;
+    background: #fff !important;
+    box-shadow: 0 0 0 3px rgba(0, 71, 113, 0.1) !important;
+}
+
+/* Chevron arrow for select */
+.cf-select-arrow {
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+}
+
+.cf-select-arrow::after {
+    content: '';
+    display: block;
+    width: 9px;
+    height: 9px;
+    border-right: 2px solid #64748b;
+    border-bottom: 2px solid #64748b;
+    transform: rotate(45deg) translateY(-3px);
+}
+
+/* Textarea */
+#contact-form textarea {
+    height: 76px !important;
+    min-height: 76px !important;
+    max-height: 76px !important;
+    padding: 10px 14px !important;
+    resize: none !important;
+    line-height: 1.5 !important;
+}
+
+#contact-form textarea::placeholder {
+    color: #a8b5c3 !important;
+}
+
+#contact-form textarea:focus {
+    border-color: #004771 !important;
+    background: #fff !important;
+    box-shadow: 0 0 0 3px rgba(0, 71, 113, 0.1) !important;
+}
+
+/* Row gutters */
+#contact-form .row.g-3 {
+    --bs-gutter-x: 12px;
+    --bs-gutter-y: 10px;
+}
+
+/* ── Submit Button — matches hero "Discuss Your Product" button ── */
+#contact-form .cf-submit-btn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 40% !important;
+    height: 62px !important;
+    margin-top: 14px !important;
+    background: #A4E03E !important;
+    border: none !important;
+    border-radius: 14px !important;
+    cursor: pointer !important;
+    color: #0d1f00 !important;
+    box-shadow: 0 4px 16px rgba(164, 224, 62, 0.45) !important;
+    transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease !important;
+    overflow: hidden !important;
+    position: relative !important;
+    padding: 0 20px !important;
+    line-height: 50px !important;
+}
+
+/* Override float-based btn-wrap — lock it to flex */
+#contact-form .cf-submit-btn .btn-wrap {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    float: none !important;
+    overflow: visible !important;
+    width: auto !important;
+    height: 100% !important;
+    position: static !important;
+}
+
+#contact-form .cf-submit-btn .btn-wrap .text-one {
+    position: static !important;
+    display: block !important;
+    transform: none !important;
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    color: #0d1f00 !important;
+    letter-spacing: 0.1px !important;
+    line-height: 1 !important;
+}
+
+#contact-form .cf-submit-btn .btn-wrap .text-two {
+    display: none !important;
+}
+
+/* Arrow SVG inside the button */
+#contact-form .cf-submit-btn svg {
+    flex-shrink: 0;
+    width: 18px !important;
+    height: 18px !important;
+    margin-left: 10px !important;
+}
+
+#contact-form .cf-submit-btn:hover {
+    background: #b6ef42 !important;
+    box-shadow: 0 6px 22px rgba(164, 224, 62, 0.6) !important;
+    transform: translateY(-1px) !important;
 }

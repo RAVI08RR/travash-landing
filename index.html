@@ -132,14 +132,14 @@
               mobile app development and MVPs, Travash helps businesses design, build and launch digital products around
               real business requirements.</p>
             <a href="#contact-form" class="btn">
-              <span class="btn-wrap">
-                <span class="text-one">Discuss Your Product</span>
+              <span class="btn-wrap btn-hero">
+                <span class="text-one ">Discuss Your Product</span>
                 <span class="text-two">Discuss Your Product</span>
               </span>
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M12.0029 7.0605L5.54768 13.5157L4.48718 12.4553L10.9417 6H5.25293V4.5H13.5029V12.75H12.0029V7.0605Z"
-                  fill="black" />
+                  fill="black"></path>
               </svg>
             </a>
           </div>
@@ -169,85 +169,60 @@
         <div class="col-lg-6">
           <form role="form" class="get-a-quote" id="contact-form" method="post" action="javascript:void(0);">
             <h6>Have a Product Idea or an Existing Application to Improve?</h6>
-            <h3>Let’s Understand the Requirement</h3>
-            <p class="mb-4 text-white-50 small">Tell us what you’re trying to build, improve or validate before you
-              invest in the build.</p>
+            <h3>Let's Understand The Requirement</h3>
+            <p class="form-subtitle">Tell us what you're trying to build, improve or validate before you invest in the
+              build.</p>
 
-            <div class="row">
-              <div class="col-lg-6">
-                <label>Complete Name*</label>
-                <input type="text" name="name" placeholder="Complete Name" required>
+            <div class="row g-3">
+              <div class="col-6">
+                <label for="cf-name">Complete Name*</label>
+                <input type="text" id="cf-name" name="name" placeholder="Complete Name" required>
               </div>
 
-              <div class="col-lg-6">
-                <label>Business Email*</label>
-                <input type="email" name="email" placeholder="user@domain.com" required>
+              <div class="col-6">
+                <label for="cf-email">Business Email*</label>
+                <input type="email" id="cf-email" name="email" placeholder="user@domain.com" required>
               </div>
 
-              <div class="col-lg-6">
-                <label>Company*</label>
-                <input type="text" name="company" placeholder="Company Name" required>
+              <div class="col-6">
+                <label for="cf-company">Company*</label>
+                <input type="text" id="cf-company" name="company" placeholder="Company Name" required>
               </div>
 
-              <div class="col-lg-6">
-                <label>Your Role*</label>
-                <input type="text" name="role" placeholder="e.g. Founder, Product Manager" required>
-              </div>
-
-              <div class="col-lg-12 form-group">
-                <label>What are you looking for?*</label>
-                <select name="looking_for" class="nice-select Advice" required>
-                  <option value="Business Website">Business Website</option>
-                  <option value="Customer Portal">Customer Portal</option>
-                  <option value="Web Application">Web Application</option>
-                  <option value="Mobile Application">Mobile Application</option>
-                  <option value="MVP">MVP</option>
-                  <option value="E-commerce / Business Application">E-commerce / Business Application</option>
-                  <option value="Existing Product Modernization">Existing Product Modernization</option>
-                  <option value="POC / Prototype">POC / Prototype</option>
-                  <option value="Not Sure Yet">Not Sure Yet</option>
-                </select>
-              </div>
-
-              <div class="col-lg-6 form-group">
-                <label>What stage are you at?*</label>
-                <select name="stage" class="nice-select Advice" required>
-                  <option value="Idea Stage">Idea Stage</option>
-                  <option value="Requirements Ready">Requirements Ready</option>
-                  <option value="Design Ready">Design Ready</option>
-                  <option value="Existing Product">Existing Product</option>
-                  <option value="Development Already Started">Development Already Started</option>
-                </select>
-              </div>
-
-              <div class="col-lg-6 form-group">
-                <label>Expected Timeline*</label>
-                <select name="timeline" class="nice-select Advice" required>
-                  <option value="Immediately">Immediately</option>
-                  <option value="1-3 Months">1–3 Months</option>
-                  <option value="3-6 Months">3–6 Months</option>
-                  <option value="Exploring Options">Exploring Options</option>
-                </select>
-              </div>
-
-              <div class="col-lg-12">
-                <div class="form-group full">
-                  <label>What is your main challenge?*</label>
-                  <textarea name="message" placeholder="Describe your main challenge or requirement..."
-                    required></textarea>
+              <div class="col-6">
+                <label for="cf-looking">What are you looking for?*</label>
+                <div class="cf-select-wrap">
+                  <select id="cf-looking" name="looking_for" required>
+                    <option value="Business Website">Business Website</option>
+                    <option value="Customer Portal">Customer Portal</option>
+                    <option value="Web Application">Web Application</option>
+                    <option value="Mobile Application">Mobile Application</option>
+                    <option value="MVP">MVP</option>
+                    <option value="E-commerce / Business Application">E-commerce / Business Application</option>
+                    <option value="Existing Product Modernization">Existing Product Modernization</option>
+                    <option value="POC / Prototype">POC / Prototype</option>
+                    <option value="Not Sure Yet">Not Sure Yet</option>
+                  </select>
+                  <span class="cf-select-arrow"></span>
                 </div>
+              </div>
+
+              <div class="col-12">
+                <label for="cf-message">What is your main challenge?*</label>
+                <textarea id="cf-message" name="message" placeholder="Describe your main challenge or requirement..."
+                  required></textarea>
               </div>
             </div>
 
-            <button class="btn" type="submit">
+            <button class="btn cf-submit-btn" type="submit">
               <span class="btn-wrap">
                 <span class="text-one">Discuss Your Product</span>
                 <span class="text-two">Discuss Your Product</span>
               </span>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.0029 7.0605L5.54768 13.5157L4.48718 12.4553L10.9417 6H5.25293V4.5H13.5029V12.75H12.0029V7.0605Z" fill="black"></path>
+              </svg>
             </button>
-
-            <p class="mt-3 text-white-50 small text-center">No obligation to start a full development project. We can
-              begin by understanding your requirement and recommending the most practical next step.</p>
           </form>
         </div>
       </div>
@@ -1546,7 +1521,7 @@
     </section>
 
     <!-- Engagement Models / Pricing Section -->
-    <section id="pricing" class="gap">
+    <section id="pricing" class="gap" style="display: none;">
       <div class="container">
         <div class="heading text-center mb-5">
           <span>Engagement Models</span>
@@ -1658,7 +1633,7 @@
       </div>
     </section>
 
-    <section class="gap no-top">
+    <section class="gap" style="padding-top: 60px !important">
 
       <div class="container">
 
@@ -1929,6 +1904,7 @@
         overflow: hidden;
         padding: 100px 0;
       }
+
       .check-icon-wrapper {
         width: 28px;
         height: 28px;
@@ -1940,8 +1916,9 @@
         justify-content: center;
         font-size: 14px;
         flex-shrink: 0;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
       }
+
       .white-contact-form-box {
         background: #ffffff;
         border-radius: 16px;
@@ -1950,16 +1927,19 @@
         z-index: 10;
         box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
       }
+
       .white-contact-form-box .form-label {
         color: #334155 !important;
         font-size: 0.85rem;
         font-weight: 600;
         margin-bottom: 6px;
       }
+
       .white-contact-form-box .form-label span.asterisk {
         color: #dc3545;
         margin-left: 2px;
       }
+
       .white-contact-form-box .form-control {
         background: #ffffff !important;
         border: 1px solid #cbd5e1 !important;
@@ -1969,15 +1949,18 @@
         transition: all 0.2s ease !important;
         font-size: 0.95rem;
       }
+
       .white-contact-form-box .form-control::placeholder {
         color: #94a3b8 !important;
       }
+
       .white-contact-form-box .form-control:focus {
         background: #ffffff !important;
         border-color: #004771 !important;
         box-shadow: 0 0 0 3px rgba(0, 71, 113, 0.15) !important;
         outline: none !important;
       }
+
       .consultation-submit-btn {
         background: #004771 !important;
         color: #ffffff !important;
@@ -1989,27 +1972,32 @@
         transition: all 0.2s ease-in-out !important;
         box-shadow: 0 4px 12px rgba(0, 71, 113, 0.15) !important;
       }
+
       .consultation-submit-btn:hover {
         background: #003656 !important;
         transform: translateY(-1px);
         box-shadow: 0 6px 18px rgba(0, 71, 113, 0.25) !important;
       }
+
       .consultation-submit-btn:active {
         transform: translateY(0);
       }
+
       .avatar-wrapper img {
         width: 50px;
         height: 50px;
         border-radius: 50%;
         object-fit: cover;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       }
+
       .avatar-wrapper h5 {
         color: #0f172a;
         font-size: 0.95rem;
         font-weight: 700;
         margin-bottom: 2px;
       }
+
       .avatar-wrapper span {
         color: #d97706;
         font-size: 0.8rem;
@@ -2027,12 +2015,13 @@
               Let’s Understand the Requirement Before You Invest in the Build.
             </h2>
             <p class="text-white mb-3 fs-5" style="opacity: 0.9; line-height: 1.5;">
-              Tell us what you’re trying to build, improve or validate. You don’t need to have a complete technical specification.
+              Tell us what you’re trying to build, improve or validate. You don’t need to have a complete technical
+              specification.
             </p>
             <p class="text-white-50 mb-4 fs-5" style="line-height: 1.5;">
               Share your business requirement and we’ll help identify whether the right next step is:
             </p>
-            
+
             <!-- Checklist items -->
             <div class="checklist-items">
               <!-- Item 1 -->
@@ -2040,7 +2029,8 @@
                 <span class="check-icon-wrapper"><i class="fa-solid fa-check"></i></span>
                 <div>
                   <h4 class="text-white fw-bold mb-1 fs-5">Discovery & Prototype</h4>
-                  <p class="text-white-50 mb-0">Align on product scoping, technical architecture, and clickable user-interface mockups.</p>
+                  <p class="text-white-50 mb-0">Align on product scoping, technical architecture, and clickable
+                    user-interface mockups.</p>
                 </div>
               </div>
               <!-- Item 2 -->
@@ -2048,7 +2038,8 @@
                 <span class="check-icon-wrapper"><i class="fa-solid fa-check"></i></span>
                 <div>
                   <h4 class="text-white fw-bold mb-1 fs-5">Proof of Concept (POC)</h4>
-                  <p class="text-white-50 mb-0">Test complex integrations and validate technical feasibility before full-scale build.</p>
+                  <p class="text-white-50 mb-0">Test complex integrations and validate technical feasibility before
+                    full-scale build.</p>
                 </div>
               </div>
               <!-- Item 3 -->
@@ -2056,7 +2047,8 @@
                 <span class="check-icon-wrapper"><i class="fa-solid fa-check"></i></span>
                 <div>
                   <h4 class="text-white fw-bold mb-1 fs-5">MVP & Full Product Development</h4>
-                  <p class="text-white-50 mb-0">Build and launch core features quickly, followed by scalable production-grade development.</p>
+                  <p class="text-white-50 mb-0">Build and launch core features quickly, followed by scalable
+                    production-grade development.</p>
                 </div>
               </div>
             </div>
@@ -2066,14 +2058,15 @@
           <div class="col-lg-6">
             <div class="white-contact-form-box">
               <!-- Sneha Sharma Avatar Header -->
-              <div class="avatar-wrapper d-flex align-items-center gap-3 mb-4 pb-3 border-bottom" style="border-color: #f1f5f9 !important;">
+              <div class="avatar-wrapper d-flex align-items-center gap-3 mb-4 pb-3 border-bottom"
+                style="border-color: #f1f5f9 !important;">
                 <img src="assets/img/team-img-1.jpg" alt="Sneha Sharma">
                 <div>
                   <h5 class="mb-0">Sneha Sharma – Client Success</h5>
                   <span>You're in the right place – let's talk!</span>
                 </div>
               </div>
-              
+
               <form role="form" class="short-contact-form" method="post" action="javascript:void(0);">
                 <div class="row">
                   <div class="col-md-6 mb-3">
@@ -2090,7 +2083,8 @@
                   </div>
                   <div class="col-md-12 mb-4">
                     <label class="form-label">Message<span class="asterisk">*</span></label>
-                    <textarea name="message" class="form-control" rows="4" placeholder="Message" required style="resize: none;"></textarea>
+                    <textarea name="message" class="form-control" rows="4" placeholder="Message" required
+                      style="resize: none;"></textarea>
                   </div>
                   <div class="col-md-12">
                     <button type="submit" class="btn w-100 consultation-submit-btn">
