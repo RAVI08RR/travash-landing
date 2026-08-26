@@ -55,7 +55,7 @@
 -----------------------------------------------------------------------------------*/
 
 
-@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 :root {
     --bgcolor: #A4E03E;
@@ -63,7 +63,7 @@
 
 body,
 html {
-    font-family: "Host Grotesk", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
     overflow-x: hidden;
 }
 
@@ -81,6 +81,7 @@ p {
 }
 
 a,
+h1,
 h2,
 h3,
 h4,
@@ -88,6 +89,7 @@ h5,
 h6 {
     color: #000;
     margin: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 a {
@@ -96,11 +98,11 @@ a {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 70px;
 }
 
 h2 {
-    font-size: 60px;
+    font-size: 70px;
 }
 
 h3 {
@@ -751,7 +753,7 @@ form#contact-form h3 {
 }
 
 .heading h2 {
-    font-size: 60px;
+    font-size: 70px;
     padding-top: 20px;
     font-weight: bold;
 }
@@ -3123,8 +3125,10 @@ form#contact-form h3 {
 .heading-add h2,
 .hero-text h1,
 .sec-title h2 {
-    font-size: 56px !important;
-    line-height: 65px !important;
+    font-size: 50px !important;
+    font-weight: 700;
+    line-height: 57px !important;
+    margin-bottom: 1.25rem;
 }
 
 @media (max-width: 991px) {
@@ -3450,9 +3454,9 @@ form#contact-form h3 {
 
 .mvp-title {
     color: #004771;
-    font-size: 2.6rem;
-    font-weight: 800;
-    line-height: 1.2;
+    font-size: 50px !important;
+    font-weight: 700;
+    line-height: 57px !important;
     margin-bottom: 1.25rem;
 }
 
@@ -3548,7 +3552,8 @@ form#contact-form h3 {
 .mvp-stepper-header h4 {
     color: #ffffff;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 50px !important;
+    line-height: 57px !important;
     margin-bottom: 0.25rem;
 }
 
@@ -4072,7 +4077,7 @@ form#contact-form h3 {
     color: #e2e8f0;
     margin: 0;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.6;
 }
 
@@ -4318,4 +4323,14 @@ form#contact-form h3 {
     background: #b6ef42 !important;
     box-shadow: 0 6px 22px rgba(164, 224, 62, 0.6) !important;
     transform: translateY(-1px) !important;
+}
+
+
+.smooth-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: none !important;
+    border: none !important;
+    transition: all 0.3s ease;
 }
