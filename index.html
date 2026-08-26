@@ -1917,68 +1917,282 @@
 
       </div> -->
 
+    <!-- Scoped Styles for Pre-Footer Contact Section -->
+    <style>
+      .pre-footer-contact {
+        background: #0b0f19 !important;
+        position: relative;
+        overflow: hidden;
+        padding: 90px 0;
+      }
+      .pre-footer-contact::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-image: 
+          linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px), 
+          linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+        background-size: 40px 40px;
+        pointer-events: none;
+        z-index: 1;
+      }
+      .glow-blob-1 {
+        background: radial-gradient(circle, rgba(164, 224, 62, 0.08) 0%, rgba(164, 224, 62, 0) 70%);
+        width: 600px;
+        height: 600px;
+        position: absolute;
+        top: -200px;
+        left: -200px;
+        filter: blur(90px);
+        pointer-events: none;
+        z-index: 1;
+      }
+      .glow-blob-2 {
+        background: radial-gradient(circle, rgba(0, 113, 255, 0.12) 0%, rgba(0, 113, 255, 0) 70%);
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        bottom: -250px;
+        right: -150px;
+        filter: blur(100px);
+        pointer-events: none;
+        z-index: 1;
+      }
+      .engagement-cards {
+        margin-top: 35px;
+      }
+      .engagement-card {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        border-radius: 14px;
+        padding: 18px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        height: 100%;
+      }
+      .engagement-card:hover {
+        background: rgba(255, 255, 255, 0.04);
+        border-color: rgba(164, 224, 62, 0.35);
+        transform: translateY(-3px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+      }
+      .engagement-card i {
+        font-size: 20px;
+        color: #A4E03E;
+        background: rgba(164, 224, 62, 0.1);
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        flex-shrink: 0;
+        transition: all 0.3s ease;
+      }
+      .engagement-card:hover i {
+        background: rgba(164, 224, 62, 0.2);
+        transform: scale(1.05) rotate(5deg);
+      }
+      .engagement-card h6 {
+        color: #fff;
+        font-weight: 600;
+        margin-bottom: 3px;
+        font-size: 1rem;
+        letter-spacing: -0.2px;
+      }
+      .engagement-card p {
+        color: #94a3b8;
+        font-size: 0.85rem;
+        margin-bottom: 0;
+        line-height: 1.35;
+      }
+      .engagement-card.full-width {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.02) 0%, rgba(164, 224, 62, 0.03) 100%);
+      }
+      .premium-contact-form-box {
+        background: rgba(15, 23, 42, 0.5);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 24px;
+        padding: 40px 35px;
+        position: relative;
+        z-index: 10;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      }
+      .premium-contact-form-box::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0; height: 4px;
+        background: linear-gradient(90deg, #A4E03E, #0071ff);
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+      }
+      .premium-contact-form-box .form-label {
+        color: #cbd5e1 !important;
+        font-size: 0.85rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      .premium-contact-form-box .form-control {
+        background: rgba(255, 255, 255, 0.03) !important;
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        color: #fff !important;
+        border-radius: 10px !important;
+        padding: 14px 18px !important;
+        transition: all 0.3s ease !important;
+        font-size: 0.95rem;
+      }
+      .premium-contact-form-box .form-control::placeholder {
+        color: rgba(255, 255, 255, 0.25) !important;
+      }
+      .premium-contact-form-box .form-control:focus {
+        background: rgba(255, 255, 255, 0.06) !important;
+        border-color: #A4E03E !important;
+        box-shadow: 0 0 15px rgba(164, 224, 62, 0.2) !important;
+        outline: none !important;
+      }
+      .premium-submit-btn {
+        background: #A4E03E !important;
+        color: #000 !important;
+        font-weight: 700 !important;
+        border-radius: 10px !important;
+        padding: 15px !important;
+        font-size: 1.1rem !important;
+        border: none !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(164, 224, 62, 0.25) !important;
+      }
+      .premium-submit-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(164, 224, 62, 0.45) !important;
+        background: #b2f04e !important;
+      }
+      .premium-submit-btn:active {
+        transform: translateY(0);
+      }
+      .form-trust-text {
+        color: #64748b;
+        font-size: 0.8rem;
+        margin-top: 18px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+      }
+      .form-trust-text i {
+        color: #A4E03E;
+        font-size: 0.85rem;
+      }
+    </style>
+
     <!-- Section 10: Pre-Footer Contact Section -->
-    <section class="gap pre-footer-contact" id="closing-cta"
-      style="background: linear-gradient(135deg, #0f172a 0%, #004771 100%); position: relative; overflow: hidden;">
+    <section class="gap pre-footer-contact" id="closing-cta">
+      <!-- Glow Blobs -->
+      <div class="glow-blob-1"></div>
+      <div class="glow-blob-2"></div>
+      
       <div class="container" style="position: relative; z-index: 2;">
         <div class="row align-items-center">
           <!-- Left Column: Copy -->
           <div class="col-lg-6 mb-5 mb-lg-0 pe-lg-5">
-            <h2 class="fw-bold mb-3 text-white" style="font-size: 2.5rem; letter-spacing: -1px; line-height: 1.2;">
-              Have a Product Idea or an Existing Application to Improve?
+            <h2 class="fw-bold mb-3 text-white" style="font-size: 2.75rem; letter-spacing: -1px; line-height: 1.2;">
+              Have a Product Idea or <span style="background: linear-gradient(90deg, #fff 30%, #A4E03E 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Application to Improve?</span>
             </h2>
-            <h5 class="fw-semibold mb-4" style="color: #A4E03E !important; font-size: 1.25rem;">Let’s Understand the
-              Requirement Before You Invest in the Build.</h5>
+            <h5 class="fw-semibold mb-4" style="color: #A4E03E !important; font-size: 1.25rem;">Let’s Understand the Requirement Before You Invest in the Build.</h5>
             <p class="text-white-50 mb-3 fs-5">
-              Tell us what you’re trying to build, improve or validate. You don’t need to have a complete technical
-              specification.
+              Tell us what you’re trying to build, improve or validate. You don’t need to have a complete technical specification.
             </p>
             <p class="text-white-50 mb-4 fs-5">
-              Share your business requirement and we’ll help identify whether the right next step is:
+              Share your business requirement and we’ll help identify the right engagement path:
             </p>
-            <div class="d-flex flex-wrap gap-2 mb-4">
-              <span class="badge bg-white text-dark px-3 py-2 fs-6 shadow-sm"
-                style="border-radius: 6px;">Discovery</span>
-              <span class="badge bg-white text-dark px-3 py-2 fs-6 shadow-sm"
-                style="border-radius: 6px;">Prototype</span>
-              <span class="badge bg-white text-dark px-3 py-2 fs-6 shadow-sm" style="border-radius: 6px;">POC</span>
-              <span class="badge bg-white text-dark px-3 py-2 fs-6 shadow-sm" style="border-radius: 6px;">MVP</span>
-              <span class="badge bg-white text-dark px-3 py-2 fs-6 shadow-sm" style="border-radius: 6px;">Full Product
-                Development</span>
+            
+            <!-- Engagement Paths Grid -->
+            <div class="row g-3 engagement-cards mb-4">
+              <div class="col-sm-6">
+                <div class="engagement-card">
+                  <i class="fa-solid fa-compass"></i>
+                  <div>
+                    <h6>Discovery</h6>
+                    <p>Scoping & Tech Strategy</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="engagement-card">
+                  <i class="fa-solid fa-layer-group"></i>
+                  <div>
+                    <h6>Prototype</h6>
+                    <p>UX/UI & Click Mockups</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="engagement-card">
+                  <i class="fa-solid fa-flask"></i>
+                  <div>
+                    <h6>Proof of Concept</h6>
+                    <p>Feasibility Validation</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="engagement-card">
+                  <i class="fa-solid fa-rocket"></i>
+                  <div>
+                    <h6>MVP Build</h6>
+                    <p>Fast Launch Core Features</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="engagement-card full-width">
+                  <i class="fa-solid fa-laptop-code"></i>
+                  <div>
+                    <h6>Full Product Development</h6>
+                    <p>End-to-End Scalable Production-Grade Software</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Right Column: Short Form -->
           <div class="col-lg-6">
-            <div class="contact-form-box p-4 p-md-5 bg-white shadow border" style="border-radius: 16px;">
+            <div class="premium-contact-form-box">
               <form role="form" class="short-contact-form" method="post" action="javascript:void(0);">
                 <div class="row">
                   <div class="col-md-6 mb-3">
-                    <label class="form-label fw-semibold text-dark">Name*</label>
-                    <input type="text" name="name" class="form-control bg-light border-0 py-3" placeholder="John Doe"
-                      required style="border-radius: 8px;">
+                    <label class="form-label">Name*</label>
+                    <input type="text" name="name" class="form-control" placeholder="John Doe" required>
                   </div>
                   <div class="col-md-6 mb-3">
-                    <label class="form-label fw-semibold text-dark">Email*</label>
-                    <input type="email" name="email" class="form-control bg-light border-0 py-3"
-                      placeholder="john@company.com" required style="border-radius: 8px;">
+                    <label class="form-label">Email*</label>
+                    <input type="email" name="email" class="form-control" placeholder="john@company.com" required>
                   </div>
                   <div class="col-md-12 mb-3">
-                    <label class="form-label fw-semibold text-dark">Phone</label>
-                    <input type="tel" name="phone" class="form-control bg-light border-0 py-3"
-                      placeholder="+1 (555) 000-0000" style="border-radius: 8px;">
+                    <label class="form-label">Phone</label>
+                    <input type="tel" name="phone" class="form-control" placeholder="+1 (555) 000-0000">
                   </div>
                   <div class="col-md-12 mb-4">
-                    <label class="form-label fw-semibold text-dark">Message*</label>
-                    <textarea name="message" class="form-control bg-light border-0 py-3" rows="4"
-                      placeholder="Briefly describe what you're looking for..." required
-                      style="border-radius: 8px; resize: none;"></textarea>
+                    <label class="form-label">Message*</label>
+                    <textarea name="message" class="form-control" rows="4" placeholder="Briefly describe what you're looking for..." required style="resize: none;"></textarea>
                   </div>
                   <div class="col-md-12">
-                    <button type="submit" class="btn w-100 py-3"
-                      style="background-color: #A4E03E; color: #000; border: none; font-weight: 700; font-size: 1.1rem; border-radius: 8px; text-transform: none;">
+                    <button type="submit" class="btn w-100 premium-submit-btn">
                       Discuss Your Project
                     </button>
+                    <div class="form-trust-text">
+                      <i class="fa-solid fa-lock"></i>
+                      <span>100% Confidential | Response within 24 hours</span>
+                    </div>
                   </div>
                 </div>
               </form>
