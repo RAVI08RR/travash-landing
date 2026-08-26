@@ -3260,6 +3260,20 @@ form#contact-form h3 {
         line-height: 36px !important;
     }
 
+    .mvp-check-card span {
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        color: #1e293b !important;
+        line-height: 1.4 !important;
+    }
+
+    #about .heading h2 {
+        color: #004771;
+        font-weight: 700;
+        margin-top: 0.5rem;
+        margin-bottom: 0rem !important;
+    }
+
     .why-us-card {
         background: #266286;
         border-radius: 0px !important;
@@ -3268,6 +3282,13 @@ form#contact-form h3 {
         padding: 1.5rem;
         clip-path: polygon(0 0, 100% 0, 100% calc(100% - 35px), calc(100% - 35px) 100%, 0 100%);
         position: relative;
+    }
+
+    #about .lead {
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        color: #020202 !important;
+        line-height: 22px !important;
     }
 
     .case-study-card .row {
