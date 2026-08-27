@@ -3291,7 +3291,7 @@ form#contact-form h3 {
         line-height: 22px !important;
     }
 
-    .case-study-card .row {
+    .case-study-card > .row {
         display: flex;
 
         flex-direction: column-reverse;

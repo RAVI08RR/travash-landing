@@ -737,6 +737,79 @@
 
 @media(max-width: 768px) {
 
+  /* Disable Swiper on Services Section for Mobile - 2 Column Grid */
+  #services .services-slider {
+    overflow: visible !important;
+  }
+
+  .case-study-section .heading span {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px 50px !important;
+    display: inline-block;
+    border-radius: 50px;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    border: 1px solid #AFAFAF;
+    position: relative;
+    padding-right: 22px;
+    background-color: #fff;
+  }
+
+  .heading-add .heading.two {
+    width: 100% !important;
+  }
+
+  #testimonials .heading span {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px 50px !important;
+    display: inline-block;
+    border-radius: 50px;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    border: 1px solid #AFAFAF;
+    position: relative;
+    padding-right: 22px;
+    background-color: #fff;
+  }
+
+  .heading span {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 12px 26px !important;
+    display: inline-block;
+    border-radius: 50px;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    border: 1px solid #AFAFAF;
+    position: relative;
+    padding-right: 22px;
+    background-color: #fff;
+  }
+
+  .services {
+
+    text-align: left !important;
+  }
+
+  #services .services-slider .swiper-wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 15px !important;
+    transform: none !important;
+    width: 100% !important;
+  }
+
+  #services .services-slider .swiper-slide {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+
+  #services .swiper-custom-arrow {
+    display: none !important;
+  }
+
   .get-a-quote.subscribe-form,
   .get-a-quote.project-type {
     margin-top: 0;
@@ -770,6 +843,18 @@
     padding-bottom: 13px !important;
   }
 
+  #services .heading.two span {
+    color: #ffffff;
+    font-weight: 700;
+    padding: 7px 35px !important;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    display: inline-block;
+    background-color: transparent;
+    margin-bottom: 12px;
+  }
+
   .challenge-card {
     background: #E2E8F0;
     border: none !important;
@@ -779,7 +864,7 @@
     padding: 1.5rem;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 35px), calc(100% - 35px) 100%, 0 100%);
     position: relative;
-    width: 12rem;
+    width: auto !important;
     display: flex;
     flex-direction: column;
   }
