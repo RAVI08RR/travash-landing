@@ -234,3 +234,18 @@ $("#show").on('click', function () {
   });
 
 });
+
+/* Mobile Menu Toggle */
+$("#mobile-menu-toggle").on("click", function(e) {
+  e.preventDefault();
+  $("#mobile-side-menu").addClass("active");
+});
+
+$("#close-mobile-menu").on("click", function(e) {
+  e.preventDefault();
+  $("#mobile-side-menu").removeClass("active");
+});
+
+$(".mobile-navbar-links li a").on("click", function() {
+  $("#mobile-side-menu").removeClass("active");
+});

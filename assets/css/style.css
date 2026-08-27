@@ -224,6 +224,7 @@ a.union {
     align-items: center;
     justify-content: center;
     border-radius: 50px;
+    display: none !important;
 }
 
 a.union:hover {
@@ -2125,7 +2126,7 @@ a.heading {
 .sponsors {
     animation: marqueeTop 10s linear infinite;
     height: 400px;
-    margin-;
+
 }
 
 ul.sponsors li img {
@@ -4487,4 +4488,92 @@ form#contact-form h3 {
     display: inline-block;
     background-color: transparent !important;
     margin-bottom: 12px;
+}
+
+/* Mobile Menu Base Styles */
+.mobile-menu-toggle {
+    display: none !important;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.mobile-side-menu {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 99999;
+    padding: 40px 30px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: right 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.mobile-side-menu.active {
+    right: 0;
+}
+
+.close-mobile-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #000;
+}
+
+.mobile-navbar-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.mobile-navbar-links li {
+    margin-bottom: 20px;
+}
+
+.mobile-navbar-links li a {
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+}
+
+.mobile-navbar-links li a:hover {
+    color: #0f5279;
+}
+
+.testimonial img {
+    max-width: 100%;
+    width: 116px;
+    border-radius: 50%;
+    height: 116px;
+    object-fit: cover;
+    background-color: #004771;
+}
+
+
+.reviews-team h4 {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.reviews-team span {
+    color: #004771;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.testimonial p {
+    font-size: 16px !important;
+    line-height: 22px !important;
+}
+
+.testimonial .fa-solid,
+.fas {
+    font-weight: 900;
+    color: #004771;
 }

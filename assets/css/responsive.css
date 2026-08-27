@@ -356,8 +356,13 @@
 
   .navbar,
   a.union,
-  .header-right .mailnumber {
+  .header-right .mailnumber,
+  .header-right .login {
     display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: block !important;
   }
 
   .subscribe-form {
