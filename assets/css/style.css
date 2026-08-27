@@ -530,6 +530,10 @@ a.search-btn svg {
     }
 
 
+    .checklist-items {
+        width: 80% !important;
+    }
+
     #services .heading.two h2 {
         color: #ffffff;
         font-weight: 700;
@@ -1489,7 +1493,11 @@ ul.star {
 }
 
 .smooth-img img {
+    transition: transform 0.5s ease;
+    display: block;
+    height: 671px;
     clip-path: polygon(20% 0%, 100% 0%, 100% 0, 100% 70%, 80% 100%, 0 100%, 0% 80%, 0 0);
+    object-fit: cover;
 }
 
 /* 18. tab nav-link */
@@ -2127,6 +2135,7 @@ ul.sponsors li img {
     margin-bottom: 19px;
     /* max-width: max-content; */
     width: 100% !important;
+    clip-path: polygon(20% 0%, 100% 0%, 100% 0, 100% 70%, 80% 100%, 0 100%, 0% 80%, 0 0);
 }
 
 /* 27. blog */
@@ -3291,7 +3300,7 @@ form#contact-form h3 {
         line-height: 22px !important;
     }
 
-    .case-study-card > .row {
+    .case-study-card>.row {
         display: flex;
 
         flex-direction: column-reverse;
@@ -3860,7 +3869,7 @@ form#contact-form h3 {
 .approach-flow {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 0px;
     align-items: center;
     margin: 1.5rem 0;
 }
@@ -3868,14 +3877,21 @@ form#contact-form h3 {
 .approach-pill {
     background: #004771;
     color: #ffffff;
-    padding: 6px 14px;
+    padding: 6px 5px;
     font-size: 0.85rem;
     font-weight: 600;
+}
+
+
+.approach-flow {
+
+    margin-top: 14px !important;
 }
 
 .approach-arrow {
     color: #004771;
     font-weight: bold;
+    margin: 5px;
 }
 
 .stat-card {
@@ -4107,12 +4123,12 @@ form#contact-form h3 {
 .stat-card {
     background: #e2e8f0;
     border: none !important;
-    padding: 20px;
+    padding: 8px;
     text-align: center;
     border-radius: 0px !important;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%);
     position: relative;
-    height: 147px;
+    height: 110px;
 }
 
 /* Premium Capability Cards */
@@ -4275,7 +4291,7 @@ form#contact-form h3 {
 #contact-form label {
     display: block !important;
     color: #374151 !important;
-    font-size: 0.78rem !important;
+    font-size: 0.78rem;
     font-weight: 600 !important;
     margin-bottom: 4px !important;
     letter-spacing: 0.1px !important;
@@ -4457,4 +4473,18 @@ form#contact-form h3 {
 
 .pipeline-badge.mx-auto.mb-4.shadow {
     margin-top: -1rem;
+}
+
+#why-us .heading span {
+    /* background-color: #A4E03E; */
+    color: #000000;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 8px 46px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    display: inline-block;
+    background-color: transparent !important;
+    margin-bottom: 12px;
 }
