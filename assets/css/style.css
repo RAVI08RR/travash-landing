@@ -3326,8 +3326,8 @@ form#contact-form h3 {
 
 #about {
     background: #F8FAFC;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 29px;
+    padding-bottom: 35px;
 }
 
 #about .about-badge {
@@ -3589,8 +3589,22 @@ form#contact-form h3 {
 /* Enhanced MVP / Scope Section Styling */
 .mvp-scope-section {
     background: linear-gradient(180deg, #f8fafc 0%, #edf2f7 100%);
-    padding: 90px 0;
+    padding: 63px 0;
     position: relative;
+}
+
+.questions {
+    background-color: #444;
+    background-image: linear-gradient(180deg, #ffffff 22%, #A4E03E);
+    padding: 52px 0;
+}
+
+section#testimonials {
+    padding: 47px 0;
+}
+
+section.gap.mvp-stepper-section {
+    padding: 53px 0;
 }
 
 .mvp-badge {
@@ -3801,7 +3815,7 @@ form#contact-form h3 {
 /* Enhanced Case Study Showcase Section */
 .case-study-section {
     background: #ffffff;
-    padding: 90px 0;
+    padding: 0px 0;
 }
 
 .case-study-card {
