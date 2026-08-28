@@ -975,8 +975,7 @@
   }
 
   .title {
-    padding: 10px 20px;
-    padding-right: 0;
+    padding: 15px 20px !important;
   }
 
   #contact-form h6 {
@@ -1193,7 +1192,16 @@
   }
 
   .get-a-quote label {
-    font-size: 12px;
+    font-size: 11px !important;
+  }
+
+  #contact-form input[type="text"],
+  #contact-form input[type="email"],
+  #contact-form select,
+  .cf-select-wrap select,
+  #contact-form textarea {
+
+    font-size: 12px !important;
   }
 
   .our-mission-list ul {
@@ -1365,6 +1373,18 @@
     grid-template-columns: 1fr;
   }
 
+
+  .hero-section {
+    position: relative;
+    padding-top: 82px !important;
+    padding-bottom: 25px !important;
+    overflow: hidden;
+    background-image: url(../img/business-partners.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left !important;
+  }
+
   .smooth-img img {
 
     height: 383px !important;
@@ -1400,5 +1420,19 @@
 
   .mvp-stepper-card {
     padding: 1.5rem;
+  }
+
+  .mvp-scope-section .d-flex.flex-wrap {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  .mvp-scope-section .btn {
+    width: 100% !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
   }
 }
