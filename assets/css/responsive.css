@@ -669,8 +669,20 @@
   }
 
   .get-a-quote {
-    margin-top: 40px;
+    margin-top: 0px;
   }
+
+  .services>a {
+    margin-top: 14px !important;
+    display: none !important;
+  }
+
+  .services {
+    height: 428px !important;
+    min-height: 420px !important;
+    padding: 18px 17px !important;
+  }
+
 
   .form-group {
     margin-bottom: 20px;
@@ -685,7 +697,7 @@
   .heading-add {
     display: flex;
     align-items: end;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     flex-wrap: wrap;
     gap: 20px;
   }
@@ -741,6 +753,33 @@
 }
 
 @media(max-width: 768px) {
+
+  /* Challenge Slider mobile optimizations */
+  .challenge-swiper .swiper-wrapper {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .challenge-swiper .swiper-slide {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .challenge-card {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+    padding: 1.2rem !important;
+    height: 183px !important;
+  }
+
+  .challenge-card h5 {
+    font-size: 0.95rem !important;
+  }
+
+  .challenge-card p {
+    font-size: 0.82rem !important;
+  }
 
   /* Disable Swiper on Services Section for Mobile - 2 Column Grid */
   #services .services-slider {
@@ -1240,10 +1279,10 @@
   }
 
   .heading span:before {
-    width: 20px;
-    height: 20px;
-    left: 10px;
-    top: 7px;
+    width: 16px;
+    height: 15px;
+    left: 7px;
+    top: 14px;
   }
 
   .hero-section {
@@ -1324,6 +1363,27 @@
 @media (max-width: 768px) {
   .mvp-grid-container {
     grid-template-columns: 1fr;
+  }
+
+  .smooth-img img {
+
+    height: 383px !important;
+
+  }
+
+  .stat-card h4 {
+    font-size: 23px;
+    font-weight: 800;
+    color: #004771;
+    margin-bottom: 4px;
+  }
+
+  .approach-flow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px !important;
+    align-items: center;
+    margin: 1.5rem 0;
   }
 
   .stat-card p {

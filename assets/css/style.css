@@ -4591,3 +4591,95 @@ section.gap.mvp-stepper-section {
     font-weight: 900;
     color: #004771;
 }
+
+.goole-star {
+    position: relative;
+    background-color: #bebebe2b;
+    border: 3px solid #ffffff26;
+    padding: 25px 35px 17px 25px;
+    backdrop-filter: blur(2px);
+    display: none;
+}
+
+/* Challenge Swiper Desktop Reset and Pagination Styling */
+@media (min-width: 768px) {
+    .challenge-swiper {
+        overflow: visible !important;
+    }
+
+    .challenge-swiper {
+        overflow: visible !important;
+    }
+
+    .challenge-swiper .swiper-wrapper.Approach-grid {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        margin-right: -10px !important;
+        margin-left: -10px !important;
+        width: auto !important;
+        height: auto !important;
+        transform: none !important;
+    }
+
+    .challenge-swiper .swiper-slide {
+        width: 25% !important;
+        padding: 10px !important;
+        margin-right: 0 !important;
+        flex-shrink: initial !important;
+        height: auto !important;
+        box-sizing: border-box !important;
+    }
+
+    .challenge-swiper-pagination {
+        display: none !important;
+    }
+
+    .challenge-slider-nav {
+        display: none !important;
+    }
+}
+
+/* Challenge Swiper Navigation Arrows on mobile */
+@media (max-width: 767px) {
+    .challenge-slider-nav {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 20px !important;
+        margin-top: 25px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .get-a-quote .btn {
+        padding: 8px 20px !important;
+        font-size: 14px !important;
+        margin-top: 11px !important;
+    }
+
+    .challenge-nav-btn {
+        width: 44px !important;
+        height: 44px !important;
+        border-radius: 50% !important;
+        background: #ffffff !important;
+        border: 1px solid #E2E8F0 !important;
+        color: #004771 !important;
+        font-size: 1rem !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        cursor: pointer !important;
+        transition: all 0.3s ease !important;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+    }
+
+    .challenge-nav-btn:hover {
+        background: #A4E03E !important;
+        color: #004771 !important;
+        border-color: #A4E03E !important;
+        box-shadow: 0 10px 15px -3px rgba(164, 224, 62, 0.3) !important;
+    }
+
+    .challenge-nav-btn:active {
+        transform: scale(0.95) !important;
+    }
+}

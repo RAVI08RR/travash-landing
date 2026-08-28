@@ -211,6 +211,48 @@ if (typeof Swiper !== 'undefined') {
       el: ".swiper-pagination",
     },
   });
+
+   var challengeSwiper = null;
+   function initChallengeSwiper() {
+     if (window.innerWidth < 768) {
+       if (!challengeSwiper) {
+         challengeSwiper = new Swiper(".challenge-swiper", {
+           slidesPerView: 2,
+           spaceBetween: 15,
+           loop: true,
+           speed: 1000,
+           autoplay: {
+             delay: 2000,
+             disableOnInteraction: false,
+           },
+           navigation: {
+             nextEl: ".challenge-next-btn",
+             prevEl: ".challenge-prev-btn",
+           },
+           breakpoints: {
+             10: {
+               slidesPerView: 2,
+               spaceBetween: 10,
+             },
+             480: {
+               slidesPerView: 2,
+               spaceBetween: 15,
+             }
+           }
+         });
+       }
+     } else {
+       if (challengeSwiper) {
+         challengeSwiper.destroy(true, true);
+         challengeSwiper = null;
+       }
+     }
+   }
+   
+   initChallengeSwiper();
+   $(window).on('resize', function() {
+     initChallengeSwiper();
+   });
  }
 
  /* 12. lightbox */
